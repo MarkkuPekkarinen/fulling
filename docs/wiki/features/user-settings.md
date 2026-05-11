@@ -34,7 +34,6 @@ This domain manages user-scoped configuration that affects all projects or the p
 
 ## Constraints
 
-- Only `/settings/integrations` is implemented; `/settings/account` is linked but missing.
+- Only `/settings/integrations` is implemented in the v2.0 release branch.
 - Kubeconfig is user-scoped, not project-scoped.
 - In a Sealos environment the app can detect iframe context and treat kubeconfig differently from a normal browser session.
-

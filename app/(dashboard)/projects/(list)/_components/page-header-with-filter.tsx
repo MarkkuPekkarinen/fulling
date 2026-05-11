@@ -27,7 +27,7 @@ export function PageHeaderWithFilter({ activeFilter, onFilterChange }: PageHeade
           My Projects
         </h1>
         <p className="text-muted-foreground mt-1">
-          Manage and monitor your full stack apps and deployments.
+          Manage and monitor your full stack project workspaces.
         </p>
       </div>
       <ToggleGroup

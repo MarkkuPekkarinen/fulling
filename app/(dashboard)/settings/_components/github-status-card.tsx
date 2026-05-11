@@ -121,7 +121,7 @@ export function GitHubStatusCard() {
             What does the GitHub Integration do?
           </h4>
           <p className="text-sm text-muted-foreground mb-4">
-            Connecting to GitHub allows you to sync your project to Fulling, and automatically deploys your production-ready project to Sealos.
+            Connecting to GitHub allows you to import repositories and keep project source metadata available in Fulling.
           </p>
 
           {installation ? (

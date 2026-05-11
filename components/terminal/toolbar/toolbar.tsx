@@ -10,7 +10,6 @@ import { useState } from 'react';
 import { MdLan } from 'react-icons/md';
 import type { Prisma } from '@prisma/client';
 
-import { AppRunner } from './app-runner';
 import { NetworkDialog } from './network-dialog';
 import { type Tab,TerminalTabs } from './terminal-tabs';
 
@@ -80,8 +79,6 @@ export function TerminalToolbar({
 
         {/* Action Buttons */}
         <div className="flex items-center gap-2">
-          <AppRunner sandbox={sandbox} />
-
           {/* Network Button */}
           <button
             onClick={() => setShowNetworkDialog(true)}

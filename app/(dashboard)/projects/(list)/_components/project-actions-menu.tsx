@@ -65,7 +65,7 @@ export function ProjectActionsMenu({ projectId, projectName, status }: ProjectAc
   };
 
   const handleSettingsClick = () => {
-    router.push(`/projects/${projectId}/settings`);
+    router.push(`/projects/${projectId}/environment`);
   };
 
   return (

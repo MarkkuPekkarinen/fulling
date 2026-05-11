@@ -47,7 +47,7 @@ export function TerminalDemo() {
                 <span className="text-primary">→</span> Provisioning PostgreSQL cluster...
               </div>
               <div className="flex items-center gap-2 text-foreground/40">
-                <span className="text-primary">→</span> Wiring runtime and deployment...
+                <span className="text-primary">→</span> Wiring runtime and project config...
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@ export function TerminalDemo() {
                 <FileEntry name=".env linked" />
                 <FileEntry name="database created" />
                 <FileEntry name="service exposed" />
-                <FileEntry name="deploy started" />
+                <FileEntry name="workspace ready" />
                 <FileEntry name="logs streaming" />
               </div>
               <div className="mt-3 pt-3 border-t border-border/50 text-xs text-muted-foreground/50">
@@ -73,7 +73,7 @@ export function TerminalDemo() {
             <div className="space-y-1.5 mb-6">
               <CheckItem text="Workspace ready" />
               <CheckItem text="Database provisioned" />
-              <CheckItem text="Deployment live" />
+              <CheckItem text="Runtime URL available" />
             </div>
 
             {/* Success Card */}

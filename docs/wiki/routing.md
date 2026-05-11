@@ -115,11 +115,8 @@ The shared dashboard sidebar exposes links for:
 - `/skills`
 - `/settings`
 
-It also advertises additional surfaces that are not implemented as routes yet:
-
-- `/mcp`
-- `/templates`
-- `/integrations`
+The v2.0 release branch intentionally keeps unimplemented future surfaces such
+as MCP, templates, and top-level integrations out of the visible navigation.
 
 ### Project Sidebar
 
@@ -140,10 +137,9 @@ The project workspace sidebar is split into:
 The settings sidebar links to:
 
 - `/settings/integrations`
-- `/settings/account` (currently unimplemented)
 
 ## Route-Level Constraints
 
 - Project detail access is enforced in the project layout, not middleware.
 - `/projects/[id]` is not a real overview page; it always redirects to the terminal page.
-- `app/(dashboard)/projects/(list)/_components/project-actions-menu.tsx` still pushes to `/projects/[id]/settings`, but no such route exists. The actual project configuration pages are split across database, environment, secrets, auth, payment, and GitHub routes.
+- `app/(dashboard)/projects/(list)/_components/project-actions-menu.tsx` points the Settings action to `/projects/[id]/environment`, the first concrete project configuration route.

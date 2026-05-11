@@ -20,8 +20,8 @@ const notoSans = Noto_Sans({
 
 export const metadata: Metadata = {
   title: 'Fulling - AI-Powered Full-Stack Development',
-  description: 'Create, develop, and deploy production-ready web applications using natural language. Powered by ' +
-    'Claude Code in isolated sandbox environments.',
+  description:
+    'Create or import full-stack projects in isolated browser sandboxes powered by Claude Code.',
 };
 
 export default function RootLayout({

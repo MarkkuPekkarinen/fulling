@@ -21,7 +21,7 @@ interface LandingClientProps {
  * Handles all interactive logic (auth, navigation) while receiving
  * server-fetched data (starCount) as props.
  *
- * Authentication Flow (v2.0.0-alpha-3):
+ * Authentication Flow (v2.0.0):
  * - Sealos environment: Auto-trigger auth on page load if unauthenticated
  * - Non-Sealos + Authenticated: Show "Go to Projects" button
  * - Non-Sealos + Unauthenticated: Show "Start Building Now" → /login

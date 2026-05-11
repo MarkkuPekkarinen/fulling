@@ -45,7 +45,7 @@ export function HeroSection({
         {/* Subtitle */}
         <p className="text-xl font-[family-name:var(--font-heading)] font-medium text-muted-foreground leading-relaxed mb-10 max-w-xl">
           Import an existing repo or start from scratch. Agents set up the workspace, runtime,
-          database, and deployment in the background.
+          optional database, and project automation in the background.
         </p>
 
         {/* Error message */}
@@ -109,7 +109,7 @@ const FEATURES_JSX = (
     </div>
     <div className="flex items-center gap-2">
       <MdCheckCircle className="text-[16px]" />
-      <span>Agents handle deploy, runtime, and infra automatically</span>
+      <span>Agents handle runtime and project setup automatically</span>
     </div>
   </div>
 );

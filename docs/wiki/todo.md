@@ -6,9 +6,8 @@ This page collects code-backed follow-up work that is visible from the current r
 
 ## Navigation Gaps
 
-- Implement `/mcp`, `/templates`, and `/integrations`, or remove those links from `components/sidebar.tsx`.
-- Implement `/settings/account`, or remove that link from `app/(dashboard)/settings/_components/settings-sidebar.tsx`.
-- Fix the stale `/projects/[id]/settings` navigation target in `app/(dashboard)/projects/(list)/_components/project-actions-menu.tsx`.
+- Keep hidden future surfaces such as MCP, templates, and top-level integrations out of the v2.0 navigation until they have implemented routes.
+- If `/settings/account` is added later, reintroduce it to `app/(dashboard)/settings/_components/settings-sidebar.tsx`.
 
 ## Project Workspace Follow-Ups
 
@@ -24,6 +23,5 @@ This page collects code-backed follow-up work that is visible from the current r
 
 ## Documentation Follow-Ups
 
-- Keep this page in sync when missing routes are implemented or removed.
+- Keep this page in sync when missing routes are implemented or reintroduced.
 - If task priority starts to matter, replace this flat list with a status-driven backlog page rather than mixing implementation state into architecture pages.
-

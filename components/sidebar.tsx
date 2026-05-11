@@ -2,10 +2,7 @@
 
 import { FaGithub } from 'react-icons/fa6'
 import {
-  MdDashboardCustomize,
-  MdExtension,
   MdGridView,
-  MdHub,
   MdLightbulbOutline,
   MdPsychology,
   MdSettings,
@@ -15,17 +12,12 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 import { Button } from '@/components/ui/button'
-import { Separator } from '@/components/ui/separator'
 
 import packageInfo from '../package.json'
 
 const menuItems = [
   { icon: MdGridView, label: 'Projects', href: '/projects', active: false },
   { icon: MdPsychology, label: 'Skills', href: '/skills', active: false },
-  { icon: MdHub, label: 'MCP', href: '/mcp', active: false },
-  { divider: true },
-  { icon: MdDashboardCustomize, label: 'Templates', href: '/templates', active: false },
-  { icon: MdExtension, label: 'Integrations', href: '/integrations', active: false },
   { icon: MdSettings, label: 'Settings', href: '/settings', active: false },
 ]
 
@@ -68,11 +60,7 @@ function NavMenu() {
 
   return (
     <nav className="flex flex-col gap-1 flex-1">
-      {menuItems.map((item, index) => {
-        if ('divider' in item) {
-          return <Separator key={`divider-${index}`} className="my-2" />
-        }
-
+      {menuItems.map((item) => {
         const isActive = pathname === item.href || pathname.startsWith(`${item.href}/`)
 
         return (

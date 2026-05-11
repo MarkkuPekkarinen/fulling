@@ -1,7 +1,7 @@
 # Fulling - AI-Powered Full-Stack Development Platform
 
 <div align="center">
-  <img src="https://img.shields.io/badge/v2.0.0--dev-yellow?style=for-the-badge" alt="Version 2.0.0-dev"/>
+  <img src="https://img.shields.io/badge/v2.0.0-blue?style=for-the-badge" alt="Version 2.0.0"/>
   <img src="https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js" alt="Next.js"/>
   <img src="https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript" alt="TypeScript"/>
   <img src="https://img.shields.io/badge/PostgreSQL-14-blue?style=for-the-badge&logo=postgresql" alt="PostgreSQL"/>
@@ -9,29 +9,22 @@
   <img src="https://img.shields.io/badge/Claude_Code-AI-purple?style=for-the-badge" alt="Claude Code"/>
 </div>
 
-> [!CAUTION]
-> **v2 development in progress**
->
-> We're rearchitecting Fulling as an Agentic app. Breaking changes expected.
->
-> For stable, use [`v1.0.0`](https://github.com/FullAgent/fulling/tree/v1.0.0).
-
 ## What is Fulling?
 
 **Fulling lets you focus on coding. AI handles everything else.**
 
-Import your project from GitHub or start fresh. Claude Code is your AI pair programmer—it writes code, runs tests, manages databases, and deploys to production. All in a browser-based development environment.
+Import your project from GitHub or start fresh. Claude Code is your AI pair programmer in a browser-based development environment with a terminal, file manager, live URLs, and optional PostgreSQL.
 
-**Configuration-driven development.** Need Stripe? OAuth? Just enter your API keys in project settings. Services become instantly available—no SDK setup, no environment variables, no integration code. Claude Code reads your config and implements the features for you.
+**Configuration-aware development.** Add project environment variables, secrets, auth keys, or payment keys in the UI. Claude Code can read that project context and use it while implementing features.
 
 ## Overview
 
-Fulling provides a sandboxed environment with Claude Code and PostgreSQL — everything you need to vibe code full-stack apps.
+Fulling v2 provides a sandboxed development environment with Claude Code, GitHub import, optional PostgreSQL, and asynchronous background reconciliation for project resources.
 
-Fulling automatically sets up everything you need, ready in a minute:
+Fulling automatically sets up the core workspace, ready in a minute:
 - AI pair programmer (Claude Code)
 - Full-stack development environment
-- Dedicated database (PostgreSQL)
+- Optional dedicated database (PostgreSQL)
 - Web terminal & file manager
 - Live HTTPS domains
 
@@ -43,7 +36,7 @@ Fulling automatically sets up everything you need, ready in a minute:
 
 - **AI Pair Programmer** - Claude Code is pre-installed and ready. Describe what you want, it writes the code.
 
-- **Zero Setup** - Full-stack environment with database, terminal, and file manager. All pre-configured, ready in seconds.
+- **Zero Setup Workspace** - Full-stack environment with terminal, file manager, and live URLs. All pre-configured, ready in seconds.
 
 - **Web Terminal** - Full Linux terminal in your browser. Run commands, install packages, debug—everything you'd do locally.
 
@@ -51,11 +44,11 @@ Fulling automatically sets up everything you need, ready in a minute:
 
 - **Live Domains** - Your app gets HTTPS URLs instantly. No port forwarding, no ngrok. Just run and share.
 
-- **Configuration-Driven** - Add Stripe, OAuth, or any service by entering API keys in settings. Claude Code reads your config and implements the integration for you.
+- **Configuration-Aware** - Add environment variables, secrets, auth keys, and payment keys in settings. Claude Code can read your config and implement against it.
 
 - **GitHub Integration** - Import repos, push changes, version control. Works like you'd expect.
 
-- **One-Click Deploy** - From sandbox to production in one click. No YAML, no CI/CD pipelines.
+- **Project Task Automation** - GitHub import and skill installation run through persisted background tasks after the sandbox is ready.
 
 ## Built With
 
@@ -72,7 +65,7 @@ For technical details, see [Architecture Documentation](./docs/architecture.md).
 - Node.js 22.12.0 or higher
 - PostgreSQL database
 - Kubernetes cluster with KubeBlocks installed
-- GitHub OAuth application credentials
+- GitHub App and OAuth application credentials
 
 ### Environment Setup
 
@@ -178,6 +171,7 @@ fulling/
 - [Development Guide](./docs/development.md) - Local development
 - [Operations Manual](./docs/operations.md) - Deployment, monitoring
 - [Troubleshooting](./docs/troubleshooting.md) - Common issues
+- [v2.0.0 Release Notes](./docs/releases/v2.0.0.md) - Release scope and migration notes
 
 ## Security
 
@@ -203,7 +197,7 @@ See [Contributing Guidelines](CONTRIBUTING.md) for details.
 
 MIT License - see [LICENSE](LICENSE).
 
-See [CHANGELOG.md](CHANGELOG.md) for release history.
+See [v2.0.0 Release Notes](./docs/releases/v2.0.0.md) for the current release scope.
 
 ## Acknowledgments
 

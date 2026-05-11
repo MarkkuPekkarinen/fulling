@@ -7,7 +7,7 @@ import { HomePageContent } from './_components/home-page-content'
 
 export const metadata = {
   title: 'My Projects | Fulling',
-  description: 'Manage and monitor your full stack apps and deployments.',
+  description: 'Manage and monitor your full stack project workspaces.',
 }
 
 export default async function HomePage() {

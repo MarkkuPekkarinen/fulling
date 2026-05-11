@@ -8,7 +8,6 @@ import { cn } from '@/lib/utils'
 
 const menuItems = [
   { label: 'Integrations', href: '/settings/integrations' },
-  { label: 'Account', href: '/settings/account' },
 ]
 
 export function SettingsSidebar() {
